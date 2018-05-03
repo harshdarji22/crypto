@@ -127,7 +127,7 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 
         html.Div(style={'width':'26%','margin':'0% 0% 0% 2%'},children=[
             html.H3(style={'font-weight':'bold','border': '2px solid black',},children='About'),
-            html.Div(style={'font-size':'20px','text-align': 'justify','height':'200px','overflow':'scroll'},id='about')
+            html.Div(style={'font-size':'20px','text-align': 'justify','height':'400px','overflow':'scroll'},id='about')
         ], className="six columns"),
     ], className="row"),
     ], className="row"),
