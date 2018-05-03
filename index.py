@@ -85,7 +85,7 @@ cnx = mysql.connector.connect(user='student', password='cs336student',
 							  
 
 def takeSixth(elem):
-    return elem[5]
+    return elem[5].split(" ")[0]
 
 def takeSecond(elem):
     return int(elem[1])
