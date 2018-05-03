@@ -384,11 +384,11 @@ def update_output(value):
 		fil = filter(lambda p: re.search("//.*?/",p[1]).group() == "//"+d+"/",filtered)
 		fil2 = filter(lambda p:p[4]=="Y", fil)
 		print("before")
-		sortedList = sorted(fil2, key=takeSixth, reverse = True)
+		#sortedList = sorted(fil2, key=takeSixth, reverse = True)
 		print("after")
-		out = list(sortedList)
-		for i in sortedList:
-			print("a")
+		out = list(fil2)
+		#for i in sortedList:
+		#	print("a")
 		#	out.append(i)
 		j=j+1
 		try:
