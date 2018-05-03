@@ -85,9 +85,10 @@ cnx = mysql.connector.connect(user='student', password='cs336student',
 							  
 
 def takeSixth(elem):
-	s = elem[5]
-	my_date = datetime.date(int(s.split("-")[2].split(" ")[0]),int(s.split("-")[1]),int(s.split("-")[0]))
-	return my_date.toordinal()
+	#s = elem[5]
+	#my_date = datetime.date(int(s.split("-")[2].split(" ")[0]),int(s.split("-")[1]),int(s.split("-")[0]))
+	#return my_date.toordinal()
+	return elem[5]
 
 def takeSecond(elem):
     return int(elem[1])
@@ -379,20 +380,16 @@ def update_output(value):
 		d = dom[j][0]
 		print(d)
 		out =[]
-		reader = csv.reader(open("output.csv"),delimiter=',')
-		filtered = filter(lambda p:p[0]==c, reader)
-		fil = filter(lambda p: re.search("//.*?/",p[1]).group() == "//"+d+"/",filtered)
-		fil2 = filter(lambda p:p[4]=="Y", fil)
-		print("before")
-		#sortedList = sorted(fil2, key=takeSixth, reverse = True)
-		print("after")
-		out = list(fil2)
-		#for i in sortedList:
-		#	print("a")
-		#	out.append(i)
-		j=j+1
 		try:
-			
+			reader = csv.reader(open("output.csv"),delimiter=',')
+			filtered = filter(lambda p:p[0]==c, reader)
+			fil = filter(lambda p: re.search("//.*?/",p[1]).group() == "//"+d+"/",filtered)
+			fil2 = filter(lambda p:p[4]=="Y", fil)
+			print("before")
+			sortedList = sorted(fil2, key=takeSixth, reverse = True)
+			print("after")
+			out = list(fil2)
+			j=j+1
 			final.append(out[0])
 			print(out[0][2])
 			i=i+1
