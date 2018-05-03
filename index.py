@@ -380,6 +380,7 @@ def update_output(value):
 		d = dom[j][0]
 		print(d)
 		out =[]
+		j=j+1
 		try:
 			reader = csv.reader(open("output.csv"),delimiter=',')
 			filtered = filter(lambda p:p[0]==c, reader)
@@ -389,7 +390,6 @@ def update_output(value):
 			sortedList = sorted(fil2, key=takeSixth, reverse = True)
 			print("after")
 			out = list(fil2)
-			j=j+1
 			final.append(out[0])
 			print(out[0][2])
 			i=i+1
