@@ -119,17 +119,17 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 	html.Hr(),
 	html.Div(style={'margin':'0% 0% 0% 1%'},children=[
         html.Div([
-            html.H3(style={'font-weight':'bold','border': '2px solid black',},children='Price Chart'),
+            html.H4(style={'font-weight':'bold','border': '2px solid black',},children='Price Chart'),
             html.Div(id='price',children=[])
         ], className="six columns"),
 
         html.Div([html.Div(style={'width':'20%','margin':'0% 0% 0% 2%'} ,children=[
-            html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Facts'),
+            html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Facts'),
             html.Div(style={'font-size':'15px','text-align': 'justify'},id='price_facts')
         ], className="six columns"),
 
         html.Div(style={'width':'26%','margin':'0% 0% 0% 2%'},children=[
-            html.H3(style={'font-weight':'bold','border': '2px solid black',},children='About'),
+            html.H4(style={'font-weight':'bold','border': '2px solid black',},children='About'),
             html.Div(style={'font-size':'15px','text-align': 'justify','height':'400px','overflow':'scroll'},id='about')
         ], className="six columns"),
     ], className="row"),
@@ -137,17 +137,17 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 	html.Hr(),
 	html.Div([
         html.Div(style={'width':'30%','margin':'0% 0% 0% 1%'} ,children=[
-            html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Top News'),
+            html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Top News'),
             html.Div(style={'font-size':'15px',},id='top_news')
         ], className="six columns"),
 
         html.Div(style={'width':'20%','margin':'0% 0% 0% 2%'} ,children=[
-            html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Relevent Domains'),
+            html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Relevent Domains'),
             html.Div(style={'font-size':'15px',},id='rel_domains')
         ], className="six columns"),
 		
 		html.Div(style={'width':'43%','margin':'0% 0% 0% 2%'} ,children=[
-            html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Market Cap Distribution'),
+            html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Market Cap Distribution'),
             dcc.Graph(
 				id='pi',
 				figure={
@@ -168,7 +168,7 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 	html.H1(style={'textAlign':'center','font':'bold 35px Castellar, serif','padding':'20px 0px 0px 0px'} ,children='Outlier Analysis'),
 	html.Div([
     		html.Div(style={'margin':'0% 0% 0% 1%','width':'45%'},children = [
-			html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Outlier Feature Calculation'),
+			html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Outlier Feature Calculation'),
 			dte.DataTable(
 			rows=outlier_df.to_dict('records'),
 
