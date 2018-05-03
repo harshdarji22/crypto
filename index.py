@@ -103,9 +103,9 @@ app.config['suppress_callback_exceptions']=True
 app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg")','width':'96%','margin':'0% 0% 0% 2%','borderRadius':'10px'},children=[
     html.H1(style={'textAlign':'center','font':'bold 35px Castellar, serif','padding':'20px 0px 0px 0px'} ,children='Crypto Analysis'),
 
-	html.Label(style={'margin': '0% 0% 0% 1%','font':'25px Britannic, serif'},children='Select a currency:'),
+	html.Label(style={'margin': '0% 0% 0% 1%','font':'20px Britannic, serif'},children='Select a currency:'),
 	html.Br(),
-	html.Div(style={'width':'20%','font-size':'25px','margin':'0% 0% 0% 1%'},children=dcc.Dropdown(
+	html.Div(style={'width':'20%','font-size':'20px','margin':'0% 0% 0% 1%'},children=dcc.Dropdown(
 		#style={'font':'25px'}
 		id='cryptos',
 		options=[{'label':'Bitcoin', 'value':'Bitcoin',},
@@ -125,12 +125,12 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 
         html.Div([html.Div(style={'width':'20%','margin':'0% 0% 0% 2%'} ,children=[
             html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Facts'),
-            html.Div(style={'font-size':'20px','text-align': 'justify'},id='price_facts')
+            html.Div(style={'font-size':'15px','text-align': 'justify'},id='price_facts')
         ], className="six columns"),
 
         html.Div(style={'width':'26%','margin':'0% 0% 0% 2%'},children=[
             html.H3(style={'font-weight':'bold','border': '2px solid black',},children='About'),
-            html.Div(style={'font-size':'20px','text-align': 'justify','height':'400px','overflow':'scroll'},id='about')
+            html.Div(style={'font-size':'15px','text-align': 'justify','height':'400px','overflow':'scroll'},id='about')
         ], className="six columns"),
     ], className="row"),
     ], className="row"),
@@ -138,12 +138,12 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 	html.Div([
         html.Div(style={'width':'30%','margin':'0% 0% 0% 1%'} ,children=[
             html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Top News'),
-            html.Div(style={'font-size':'20px',},id='top_news')
+            html.Div(style={'font-size':'15px',},id='top_news')
         ], className="six columns"),
 
         html.Div(style={'width':'20%','margin':'0% 0% 0% 2%'} ,children=[
             html.H3(style={'font-weight':'bold','border': '2px solid black'},children='Relevent Domains'),
-            html.Div(style={'font-size':'20px',},id='rel_domains')
+            html.Div(style={'font-size':'15px',},id='rel_domains')
         ], className="six columns"),
 		
 		html.Div(style={'width':'43%','margin':'0% 0% 0% 2%'} ,children=[
@@ -185,7 +185,7 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 		*All calculations are with respect to Bitcoin.
 			
 		''']),
-		html.Div(style={'font-size':'20px',},children=['''
+		html.Div(style={'font-size':'15px',},children=['''
 				
 		This is a interactive table. You can sort, search and filter using any column in the table. The adjacent graphs will update accordingly.
 		
@@ -197,12 +197,12 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
 	], className="row"),
 	html.Hr(),
 	html.H1(style={'textAlign':'center','font':'bold 35px Castellar, serif','padding':'20px 0px 0px 0px'} ,children='Pump and Dump Analysis'),
-	html.Div(style={'font-size':'20px',},children=['''
+	html.Div(style={'font-size':'15px',},children=['''
 				
 		Click on the below link to go to the pump and dump webpage
 		
 		''']),
-	html.Div(style={'font-size':'30px'},children=html.A(href="https://blooming-woodland-80837.herokuapp.com/",target = "_blank", children = "Click here")),
+	html.Div(style={'font-size':'20px'},children=html.A(href="https://blooming-woodland-80837.herokuapp.com/",target = "_blank", children = "Click here")),
 	html.Div(style={'width':'95%','margin':'1% 2.5% 1% 2.5%','borderRadius':'10px','opacity':'1'}, children=html.Div(id='output')),
 	
 	
