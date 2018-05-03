@@ -18,6 +18,8 @@ gunicorn = "*"
 dash-table-experiments = "*"
 beautifulsoup4 = "*"
 goose3 = "*"
+coinmarketcap = "*"
+
 
 [requires]
 
