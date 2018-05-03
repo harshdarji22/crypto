@@ -389,7 +389,7 @@ def update_output(value):
 			print("before")
 			sortedList = sorted(fil2, key=takeSixth, reverse = True)
 			print("after")
-			out = list(fil2)
+			out = list(sortedList)
 			final.append(out[0])
 			print(out[0][2])
 			i=i+1
