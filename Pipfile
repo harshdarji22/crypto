@@ -1,0 +1,24 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+dash = "*"	
+dash-renderer = "*"
+dash-html-components = "*"
+dash-core-components = "*"
+plotly = "*"
+numpy = "*"
+pandas = "*"
+mysql-connector-python = "*"
+gunicorn = "*"
+dash-table-experiments = "*"
+beautifulsoup4 = "*"
+goose3 = "*"
+
+[requires]
+
+python_version = "3.6"
