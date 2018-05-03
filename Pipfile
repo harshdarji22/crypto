@@ -19,6 +19,7 @@ dash-table-experiments = "*"
 beautifulsoup4 = "*"
 goose3 = "*"
 coinmarketcap = "*"
+nltk = "*"
 
 
 [requires]
