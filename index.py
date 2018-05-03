@@ -383,8 +383,8 @@ def update_output(value):
 		fil2 = filter(lambda p:p[4]=="Y", fil)
 		sortedList = sorted(fil2, key=takeSixth, reverse = True)
 		out = list(sortedList)
-		#for i in sortedList:
-		#	print("a")
+		for i in sortedList:
+			print("a")
 		#	out.append(i)
 		j=j+1
 		try:
