@@ -136,12 +136,12 @@ app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/
     ], className="row"),
 	html.Hr(),
 	html.Div([
-        html.Div(style={'width':'30%','margin':'0% 0% 0% 1%'} ,children=[
-            html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Top News'),
-            html.Div(style={'font-size':'15px',},id='top_news')
-        ], className="six columns"),
+        #html.Div(style={'width':'30%','margin':'0% 0% 0% 1%'} ,children=[
+        #    html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Top News'),
+        #    html.Div(style={'font-size':'15px',},id='top_news')
+        #], className="six columns"),
 
-        html.Div(style={'width':'20%','margin':'0% 0% 0% 2%'} ,children=[
+        html.Div(style={'width':'40%','margin':'0% 0% 0% 2%'} ,children=[
             html.H4(style={'font-weight':'bold','border': '2px solid black'},children='Relevent Domains'),
             html.Div(style={'font-size':'15px',},id='rel_domains')
         ], className="six columns"),
