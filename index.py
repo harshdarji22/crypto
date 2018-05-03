@@ -87,7 +87,7 @@ cnx = mysql.connector.connect(user='student', password='cs336student',
 def takeSixth(elem):
 	s = elem[5]
 	my_date = datetime.date(int(s.split("-")[2].split(" ")[0]),int(s.split("-")[1]),int(s.split("-")[0]))
-    	return my_date.toordinal()
+	return my_date.toordinal()
 
 def takeSecond(elem):
     return int(elem[1])
