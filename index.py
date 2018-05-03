@@ -384,7 +384,7 @@ def update_output(value):
 		try:
 			reader = csv.reader(open("output.csv"),delimiter=',')
 			filtered = filter(lambda p:p[0]==c, reader)
-			fil = filter(lambda p: re.search("//.*?/",p[1]).group() == "//"+d+"/",filtered)
+			#fil2 = filter(lambda p: re.search("//.*?/",p[1]).group() == "//"+d+"/",filtered)
 			fil2 = filter(lambda p:p[4]=="Y", fil)
 			print("before")
 			sortedList = sorted(fil2, key=takeSixth, reverse = True)
