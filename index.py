@@ -23,15 +23,15 @@ pv=[]
 pl=[]
 pv2=[]
 for i in stat:
-	pl.append(i['id'])
-	pv.append(i['market_cap_usd'])
+	pl.append(i["id"])
+	pv.append(i["market_cap_usd"])
 #print(stat[0]['id'])
 #print(pv)
 stat1 = coinmarketcap.stats()
-bitcoin_per = stat1['bitcoin_percentage_of_market_cap']
+bitcoin_per = stat1["bitcoin_percentage_of_market_cap"]
 #print(bitcoin_per)
 bit = coinmarketcap.ticker('bitcoin')
-bit_p = bit[0]['market_cap_usd']
+bit_p = bit[0]["market_cap_usd"]
 #print(bit_p)
 
 #print(pv[0].type)
