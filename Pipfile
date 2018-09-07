@@ -24,4 +24,4 @@ nltk = "*"
 
 [requires]
 
-python_version = "3.6"
+python-3.6.5
