@@ -100,7 +100,7 @@ server = app.server
 app.config['suppress_callback_exceptions']=True
 #url("")
 #application layout
-app.layout = html.Div(style={'width':'96%','margin':'0% 0% 0% 2%','borderRadius':'10px'},children=[
+app.layout = html.Div(style={'backgroundImage':'url("http://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg")','width':'96%','margin':'0% 0% 0% 2%','borderRadius':'10px'},children=[
     html.H1(style={'textAlign':'center','font':'bold 35px Castellar, serif','padding':'20px 0px 0px 0px'} ,children='Crypto Analysis'),
 
 	html.Label(style={'margin': '0% 0% 0% 1%','font':'20px Britannic, serif'},children='Select a currency:'),
